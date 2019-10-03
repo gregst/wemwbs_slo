@@ -155,8 +155,8 @@ ci.reliability(data=WEMWBS_table, type="omega", conf.level = 0.95, interval.type
 summary(WEMWBS_table)
 
 # Histograms
+png(filename="figure1.png", type="cairo", height = 6, width = 6, units = 'in', res=300)
 hist(WEMWBS_total, breaks=40 , border=F , col=rgb(0.1,0.8,0.3,0.5) , xlab="distribution of WEMWBS_total" , main="")
-ggsave("figure1.png", width = 6, height = 6, res=300)
 dev.off()
 
 # Plot png image
